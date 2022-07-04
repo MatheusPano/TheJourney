@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+/*Presets*/
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "VT323", monospace;
+}
+
+/*h e a d e r*/
+
+.headerList {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.headerList .headerListItem {
+  list-style: none;
+  margin-right: 16px;
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .headerList .headerListItem {
+    font-size: 48px;
+  }
+}
+
+.headerList .headerListItem a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.headerList .headerListItem:hover {
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+
+/*content*/
+
+.content { 
+  margin-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    margin-top: 50px;
+  }
+}
+
+.content .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .content .container {
+    max-width: 1288px;
+  }
+}
+
+.titleArea .title {
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .titleArea .title {
+    font-size: 64px;
+  }
+}
+
+.container .titleArea{
+    text-align: center;
+}
+
+.container .titleArea img{
+    transform: translateY(0px);
+    animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    
+}
+
+.infoArea .infoText {
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .infoArea .infoText {
+    font-size: 24px;
+  }
+}
+
+.playButtonArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  max-width: 200px;
+  text-align: center;
+  gap: 25px;
+  margin: auto;
+}
+
+.playButtonArea .playButton {
+  font-size: 24px;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .playButtonArea .playButton {
+    font-size: 42px;
+    padding: 16px 32px;
+  }
+}
+
+.playButtonArea .playButton a {
+  color: #fff;
+}
+
+/* Play Page */
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+label .inputText {
+  font-size: 32px;
+}
+
+.inputZone input {
+  text-align: center;
+  padding: 16px 32px;
+  background-color: #000;
+  border: 3px solid #fff;
+  font-family: "VT323", monospace;
+  font-size: 24px;
+  color: #fff;
+}
+
+.inputZone input::placeholder {
+  color: #fff;
+}
+
+.inputForm button, buttom, .situation-inner-options button, .results button {
+  margin-top: 32px;
+  background: #000;
+  border: 3px solid #fff;
+  padding: 5px 32px;
+  color: #fff;
+  font-family: "VT323", monospace;
+  font-size: 24px;
+}
+
+.results{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* RPG ZONE */
+
+.rpgZone {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rpgZone div {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.rpgZone p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .rpgZone div {
+    max-width: 1288px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .rpgZone p {
+    font-size: 24px;
+  }
+}
+
+buttom:hover {
+  cursor: pointer;
+}
+
+.hud {
+  width: 100%;
+}
+
+.hud-inner {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 100%;
+}
+
+
+.hud-inner .hud-inner-left{
+    text-align: left;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+.playerOptions li{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playerOptions li buttom{
+    min-width: 100px;
+    text-align: center;
+}
+
+.situation-inner-options{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .situation-inner-options{
+    flex-direction: row;    
+  }
+}
+
+.situation-inner{
+  text-align: center;
+}
+
+
+#trofeu{
+  margin-top: 30px;
+  width: 100px;
+  animation: none;
+}
+
+.coracao{
+  width: 100px;
+}
+
+  .tutoArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .img-tutorial{
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  .tutoText{
+    font-size: 24px;
+  }
+
+  .d20{
+    font-size: 2px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

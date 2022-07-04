@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playing...</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="mainContent">
+      <div class="header">
+        <ul class="headerList">
+          <li class="headerListItem"><a href="index.html">Home</a></li>
+          <li class="headerListItem"><a href="play.html">Jogar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="titleArea">
+          <h1 class="title">Vamos iniciar sua jornada</h1>
+        </div>
+
+        <div class="inputArea">
+          <div class="input0">
+            <div class="inputForm">
+              <div class="inputZone">
+                <label for="nome">
+                  <p class="inputText">Qual seu nome jogador(a)?</p>
+                </label>
+                <input
+                  type="text"
+                  required
+                  placeholder="Digite aqui seu nome"
+                  name="nome"
+                  id="input-0"
+                />
+              </div>
+              <button type="submit" onclick="handleNameSubmit()">
+                <p class="inputText">Comecar</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="rpgZone">
+          
+            
+        </div>
+      </div>
+    </div>
+    <script src="situations.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
